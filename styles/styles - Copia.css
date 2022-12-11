@@ -1,0 +1,91 @@
+html {
+  font-family: 'Roboto', sans-serif; /* this should be the rest of the output you got from Google fonts */
+  font-size: 12px;
+  background-color: #e8e8e1;
+  background-image: linear-gradient(#000000, #000000);
+}
+
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+#most-important-vinyls-vinyl-body {
+  background-color: #b3d1ff;  
+  background-image: linear-gradient(to bottom right, #ffffff, #ffffff);
+
+}  
+
+
+#most-important-vinyls-vinyl-image1 {
+	opacity: 0.85;
+}
+
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: #e4b41f;
+  text-shadow: 3px 3px 1px black;
+}
+
+most-important-vinyls-h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: #e4b41f;
+  text-shadow: 3px 3px 1px black;
+}
+
+#vinyl-link {
+  color: #10EC43;
+}
+
+
+
+p, li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+b {
+  text-decoration: underline;
+}
+
+figcaption {
+  font-style: oblique;
+}
+
+.submit-button-body {	
+	background-color: #8a544f;
+	color: red;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.submit-button-body:hover {opacity: 1}
+
+.image_center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image_absolute {
+  position: absolute;
+}

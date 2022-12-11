@@ -2,24 +2,38 @@ html {
   font-family: 'Roboto', sans-serif; /* this should be the rest of the output you got from Google fonts */
   font-size: 12px;
   background-color: #e8e8e1;
+  background-image: linear-gradient(#000000, #000000);
 }
 
-body {
+
+.body_div {
   width: 1200px;
   margin: 0 auto;
-  background-color: #ebc8b2;
-  padding: 0 20px 20px 20px;
+  background-color: #ffffff;
+  padding: 20px 20px 20px 20px;
   border: 5px solid black;
 }
 
+footer {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px 20px 20px;
+  border: 5px solid black;
+  color: #00FF7F;
+}
 
 h1 {
-  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 1.2em;	
+  font-size: 5.5em;
   text-align: center;
-   margin: 0;
+  margin: 0;
   padding: 20px 0;
-  color: #e4b41f;
-  text-shadow: 3px 3px 1px black;
+  color: #000000;
+}
+
+#vinyl-link {
+  color: #10EC43;
 }
 
 p, li {
@@ -37,13 +51,12 @@ figcaption {
 }
 
 .submit-button-body {	
-	background-color: #e3beaf;
-	color: red;
+	color: black;
   padding: 16px 32px;
   text-align: center;
   font-size: 16px;
   margin: 4px 2px;
-  opacity: 0.6;
+  /*opacity: 0.6;*/
   transition: 0.3s;
   display: inline-block;
   text-decoration: none;
@@ -51,3 +64,34 @@ figcaption {
 }
 
 .submit-button-body:hover {opacity: 1}
+
+.image_center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image_absolute {
+  position: absolute;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
