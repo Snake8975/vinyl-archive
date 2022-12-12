@@ -10,53 +10,57 @@
 		<link href="styles/styles.css" rel="stylesheet">
 	</head>
 	<body>
-		<div>
-			<img src="images/Vinyl_logo_picture.jpg" alt="Vinyl logo"> 
-		</div>
-		<div class="body_div">
-			<h1>Archivia il tuo vinile</h1>
-			<figure class="upper-image-disk">
-				<img src="images/vinyl-factory.png" alt="Man watching a vinyl in the middle of a pile of vinyls">		
-			</figure>
-			<br>
-			<form action="/action_page.php">	  
-				<fieldset>
-					<legend>
-						Inserisci qui i dati del tuo vinile preferito
-					</legend>
-					<table>
-						<tbody>
-							<tr>
-								<th scope="row"><label for="n_disco">Disco:</label></th>
-								<td><input type="text" id="n_disco" name="n_disco"></td>
-							</tr>
-							<tr>
-								<th scope="row"><label for="n_artista">Artista:</label></th>
-								<td><input type="text" id="n_artista" name="n_artista"></td>
-							</tr>
-							<tr>
-								<th scope="row"><label for="anno">Anno:</label></th>
-								<td><input type="text" id="anno" name="anno"></td>
-							</tr>
-							<tr>
-								<th scope="row"><label for="n_tracce">Numero tracce:</label></th>
-								<td><input type="text" id="n_tracce" name="n_tracce"></td>
-							</tr>
-							<tr>
-								<th scope="row"><label for="etichetta">Etichetta:</label></th>
-								<td><input type="text" id="etichetta" name="etichetta"></td>
-							</tr>
-							<tr>
-								<th scope="row"><label for="e-mail">E-Mail:</label></th>
-								<td><input type="text" id="e-mail" name="e-mail"></td>
-							</tr>
-						</tbody>
-					</table>
-				</fieldset>
-				  
-				<input type="submit" value="Submit">
-			</form> 
-		</div>
+		<header>
+			<div>
+				<img src="images/Vinyl_logo_picture.jpg" alt="Vinyl logo"> 
+			</div>
+		</header>
+		<main>
+			<div class="body_div">
+				<h1>Archivia il tuo vinile</h1>
+				<figure class="upper-image-disk">
+					<img src="images/vinyl-factory.png" alt="Man watching a vinyl in the middle of a pile of vinyls">		
+				</figure>
+				<br>
+				<form action="/action_page.php">	  
+					<fieldset>
+						<legend>
+							Inserisci qui i dati del tuo vinile preferito
+						</legend>
+						<table>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="n_disco">Disco:</label></th>
+									<td><input type="text" id="n_disco" name="n_disco"></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="n_artista">Artista:</label></th>
+									<td><input type="text" id="n_artista" name="n_artista"></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="anno">Anno:</label></th>
+									<td><input type="text" id="anno" name="anno"></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="n_tracce">Numero tracce:</label></th>
+									<td><input type="text" id="n_tracce" name="n_tracce"></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="etichetta">Etichetta:</label></th>
+									<td><input type="text" id="etichetta" name="etichetta"></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="e-mail">E-Mail:</label></th>
+									<td><input type="text" id="e-mail" name="e-mail"></td>
+								</tr>
+							</tbody>
+						</table>
+					</fieldset>
+					
+					<input type="submit" value="Submit">
+				</form> 
+			</div>	
+		</main>
 		<footer>
 			<p>Registra il tuo vinile preferito, se verrai estratto, riceverai un regalo. W.W.</p>
 		</footer>
