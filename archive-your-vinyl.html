@@ -19,6 +19,13 @@
 						<ul><a href="archive-your-vinyl.html">Archivia il tuo vinile</a></ul>
 						<ul><a href="most-important-vinyls-list.html">I vinili più importanti</a></ul>
 						<ul><a href="vinyl-history.html">La storia del vinile</a></ul>
+						<ul>
+							<form action="https://www.discogs.com/it/search" target="_blank">
+								<input type="text" name="q">
+								<button>Search Discogs</button>
+						
+							</form>
+						</ul>
 					</li>
 				</nav>
 			</div>
@@ -61,12 +68,83 @@
 									<th scope="row"><label for="e-mail">E-Mail:</label></th>
 									<td><input type="text" id="e-mail" name="e-mail" placeholder="Tuo indirizzo e-mail"></td>
 								</tr>
+								<tr>
+									<th scope="row"><label for="genere">Genere:</label></th>
+									<td>
+										<select name="genere" id="genere">
+											<option value="">---Scegli un genere musicale---</option>
+											<option value="rap">Rap</option>
+											<option value="k-pop">K-pop</option>
+											<option value="rock">Rock</option>
+											<option value="pop">Pop</option>
+											<option value="musica-elettronica">Musica elettronica</option>
+											<option value="indipendente">Indipendente</option>
+											<option value="musica-classica">Musica classica</option>
+											<option value="country">Country</option>
+											<option value="metal">Metal</option>
+											<option value="folk">Folk</option>
+											<option value="flamenco">Flamenco</option>
+											<option value="jazz">Jazz</option>
+											<option value="salsa">Salsa</option>
+											<option value="blues">Blues</option>
+											<option value="reggaeton">Reggaeton</option>
+											<option value="reggae">Reggae</option>
+											<option value="punk">Punk</option>
+										</select>
+									</td>
+								</tr>
 							</tbody>
 						</table>
+					</fieldset>
+
+					<fieldset>
+						<legend>
+							Dati Extra
+						</legend>
+
+						<div>
+							Dove hai acquistato il vinile? <br>
+							<input type="radio" id="negozio" name="acquisto-vinile" value="negozio">
+							<label for="negozio">Negozio</label>
+
+							<input type="radio" id="online" name="acquisto-vinile" value="online">
+							<label for="online">Store Online</label>
+
+							<input type="radio" id="rivendita-usato" name="acquisto-vinile" value="rivendita-usato">
+							<label for="rivendita-usato">Rivenditore usato</label>
+
+							<input type="radio" id="altro" name="acquisto-vinile" value="altro">
+							<label for="altro">Altro</label>
+						</div>
+						<br>
+						<div>
+							Hai mai visto l'artista dal vivo? <br>
+							<input type="radio" id="si-visto" name="artista-dal-vivo" value="si">
+							<label for="si-visto">Si</label>
+
+							<input type="radio" id="no-visto" name="artista-dal-vivo" value="no">
+							<label for="no-visto">No</label>
+						</div>
+						<div>
+							<label for="opinione-album">Lasciaci la tua opinione sull'album:</label><br>
+							<textarea id="opinione-album" name="opinione-album" rows="10" cols="50">
+							</textarea>
+
+						</div>
+
 					</fieldset>
 					
 					<input type="submit" value="Submit">
 				</form> 
+				<br>
+				<div>
+					<label for="form-ricerca-concerto">Ricerca il concerto dell'artista:</label>
+					<form id="form-ricerca-concerto" action="https://www.setlist.fm/search" target="_blank">
+						<input type="text" name="query">
+						<button>Search Setlist.fm</button>
+						
+					</form>
+				</div>
 			</div>	
 		</main>
 		<footer>
